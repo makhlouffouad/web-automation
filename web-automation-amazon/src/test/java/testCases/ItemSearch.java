@@ -40,7 +40,7 @@ public class ItemSearch extends CommonAPI{
 				selectOptionByVisibleText(element, list.get(i).getText());
 				System.out.println(list.get(i).getText());
 				takeKeysEnter("#twotabsearchtextbox");
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				element = driver.findElement(By.id("searchDropdownBox"));
 				list = getListOfElement("searchDropdownBox option");
 			}
