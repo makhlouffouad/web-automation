@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Cnn App running on chrome Browser" duration-ms="22907" started-at="2016-08-19T21:15:45Z" finished-at="2016-08-19T21:16:08Z">
+    <groups>
+    </groups>
+    <test name="Home Page" duration-ms="22907" started-at="2016-08-19T21:15:45Z" finished-at="2016-08-19T21:16:08Z">
+      <class name="testCases.Search">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.Search@6767c1fc]" name="setUp" is-config="true" duration-ms="17476" started-at="2016-08-19T17:15:45Z" finished-at="2016-08-19T17:16:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kamalfouad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9e393693-07be-4415-a1b3-738bae10e050]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[fireFox]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[46]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[http://www.cnn.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="search()[pri:0, instance:testCases.Search@6767c1fc]" name="search" duration-ms="3751" started-at="2016-08-19T17:16:02Z" finished-at="2016-08-19T17:16:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testCases.Search@6767c1fc]" name="cleanUp" is-config="true" duration-ms="1660" started-at="2016-08-19T17:16:06Z" finished-at="2016-08-19T17:16:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- testCases.Search -->
+    </test> <!-- Home Page -->
+  </suite> <!-- Cnn App running on chrome Browser -->
+</testng-results>

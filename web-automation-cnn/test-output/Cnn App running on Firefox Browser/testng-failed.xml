@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cnn App running on Firefox Browser]">
+  <parameter name="url" value="http://www.cnn.com"/>
+  <test name="Home Page">
+    <classes>
+      <class name="testCases.Search"/>
+    </classes>
+  </test> <!-- Home Page -->
+</suite> <!-- Failed suite [Cnn App running on Firefox Browser] -->

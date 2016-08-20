@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon App running on Firefox Browser">
+
+    <parameter name="url" value="http://www.amazon.com"/>
+     <parameter name="browserName" value="fireFox"/>
+    <parameter name="useCloud" value="false"/>
+    <parameter name="userName" value="kamalfouad"/>
+    <parameter name="accessKey" value="9e393693-07be-4415-a1b3-738bae10e050"/>
+    <parameter name="os" value="windows 10"/>
+    <parameter name="browserVersion" value="46"/>
+    
+    <test name="Home Page">
+        <classes>
+            <class name="testCases.ItemSearch"/>
+        </classes>
+    </test>
+
+</suite>
