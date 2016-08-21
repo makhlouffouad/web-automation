@@ -7,7 +7,7 @@
     <parameter name="url" value="http://www.cnn.com"/>
    <!--  <parameter name="browserName" value="ie"/>
     <parameter name="browserName" value="chrome"/> -->
-    <parameter name="browserName" value="fireFox"/>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="useCloud" value="false"/>
     <parameter name="userName" value="kamalfouad"/>
     <parameter name="accessKey" value="9e393693-07be-4415-a1b3-738bae10e050"/>
@@ -16,7 +16,8 @@
     
     <test name="Home Page">
         <classes>
-            <class name="testCases.Search"/>
+		<!--<class name="testCases.SearchNewsByDataFromExcelFile"/> -->
+            <class name="testCases.SearchNewsFromDB"/>
         </classes>
     </test>
 

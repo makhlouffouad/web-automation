@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5400" started-at="2016-08-19T21:21:05Z" finished-at="2016-08-19T21:21:10Z">
+  <suite name="Default suite" duration-ms="48" started-at="2016-08-21T00:22:01Z" finished-at="2016-08-21T00:22:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5400" started-at="2016-08-19T21:21:05Z" finished-at="2016-08-19T21:21:10Z">
+    <test name="Default test" duration-ms="48" started-at="2016-08-21T00:22:01Z" finished-at="2016-08-21T00:22:01Z">
       <class name="testCases.ItemSearch">
-        <test-method status="FAIL" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.ItemSearch@724af044]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-19T17:21:05Z" finished-at="2016-08-19T17:21:05Z">
+        <test-method status="FAIL" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.ItemSearch@4c70fda8]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-20T20:22:01Z" finished-at="2016-08-20T20:22:01Z">
           <params>
             <param index="0">
               <value>
@@ -30,9 +30,7 @@
               </value>
             </param>
             <param index="4">
-              <value>
-                <![CDATA[fireFox]]>
-              </value>
+              <value is-null="true"/>
             </param>
             <param index="5">
               <value>
@@ -44,17 +42,10 @@
             </param>
           </params>
           <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[null value in entry: url=null]]>
-            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: null value in entry: url=null
-	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
-	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:39)
-	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:49)
-	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:70)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:316)
-	at base.CommonAPI.setUp(CommonAPI.java:49)
+              <![CDATA[java.lang.NullPointerException
+	at base.CommonAPI.getLocalDriver(CommonAPI.java:63)
+	at base.CommonAPI.setUp(CommonAPI.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -87,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="dropDownSearch()[pri:0, instance:testCases.ItemSearch@724af044]" name="dropDownSearch" duration-ms="5" started-at="2016-08-19T17:21:10Z" finished-at="2016-08-19T17:21:10Z">
+        <test-method status="SKIP" signature="dropDownSearch()[pri:0, instance:testCases.ItemSearch@4c70fda8]" name="dropDownSearch" duration-ms="2" started-at="2016-08-20T20:22:01Z" finished-at="2016-08-20T20:22:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDownSearch -->
-        <test-method status="SKIP" signature="cleanUp()[pri:0, instance:testCases.ItemSearch@724af044]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-08-19T17:21:10Z" finished-at="2016-08-19T17:21:10Z">
+        <test-method status="SKIP" signature="cleanUp()[pri:0, instance:testCases.ItemSearch@4c70fda8]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-08-20T20:22:01Z" finished-at="2016-08-20T20:22:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

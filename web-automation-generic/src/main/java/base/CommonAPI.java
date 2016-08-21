@@ -41,9 +41,9 @@ public WebDriver driver = null;
 						@Optional("kamalfouad") String userName, 
 						@Optional("") String accessKey,
 						@Optional("windows 10")String os, 
-						@Optional("fireFox") String browserName,
+						@Optional (" ") String browserName,
 						@Optional ("46")String browserVersion,
-						@Optional String url) throws IOException{
+						@Optional (" ") String url) throws IOException{
 		
 		if(useCloud==true){
 			//run in cloud
