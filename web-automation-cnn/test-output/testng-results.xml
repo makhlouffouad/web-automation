@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Cnn App running on fireFox Browser" duration-ms="49312" started-at="2016-08-21T01:32:39Z" finished-at="2016-08-21T01:33:29Z">
+  <suite name="Cnn App running on fireFox Browser" duration-ms="48396" started-at="2016-08-21T02:40:46Z" finished-at="2016-08-21T02:41:34Z">
     <groups>
     </groups>
-    <test name="Home Page" duration-ms="49312" started-at="2016-08-21T01:32:39Z" finished-at="2016-08-21T01:33:29Z">
+    <test name="Home Page" duration-ms="48396" started-at="2016-08-21T02:40:46Z" finished-at="2016-08-21T02:41:34Z">
       <class name="testCases.SearchNewsFromDB">
-        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.SearchNewsFromDB@61832929]" name="setUp" is-config="true" duration-ms="11973" started-at="2016-08-20T21:32:39Z" finished-at="2016-08-20T21:32:51Z">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.SearchNewsFromDB@61832929]" name="setUp" is-config="true" duration-ms="13908" started-at="2016-08-20T22:40:46Z" finished-at="2016-08-20T22:41:00Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchNews()[pri:0, instance:testCases.SearchNewsFromDB@61832929]" name="searchNews" duration-ms="35996" started-at="2016-08-20T21:32:51Z" finished-at="2016-08-20T21:33:27Z">
+        <test-method status="PASS" signature="searchNews()[pri:0, instance:testCases.SearchNewsFromDB@61832929]" name="searchNews" duration-ms="33472" started-at="2016-08-20T22:41:00Z" finished-at="2016-08-20T22:41:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchNews -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testCases.SearchNewsFromDB@61832929]" name="cleanUp" is-config="true" duration-ms="1313" started-at="2016-08-20T21:33:27Z" finished-at="2016-08-20T21:33:29Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testCases.SearchNewsFromDB@61832929]" name="cleanUp" is-config="true" duration-ms="982" started-at="2016-08-20T22:41:33Z" finished-at="2016-08-20T22:41:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

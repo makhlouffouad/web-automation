@@ -13,4 +13,15 @@
       <class name="testCases.ItemSearch"/>
     </classes>
   </test> <!-- Home Page -->
+  <test name="Home Page(failed)">
+    <classes>
+      <class name="testCases.ItemSearch">
+        <methods>
+          <include name="setUp"/>
+          <include name="dropDownSearch"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testCases.ItemSearch -->
+    </classes>
+  </test> <!-- Home Page(failed) -->
 </suite> <!-- Failed suite [Amazon App running on Firefox Browser] -->
