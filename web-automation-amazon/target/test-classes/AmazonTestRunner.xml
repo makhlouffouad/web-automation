@@ -13,7 +13,8 @@
     
     <test name="Home Page">
         <classes>
-            <class name="testCases.ItemSearch"/>
+            <!-- <class name="testCases.ItemSearch"/> -->
+            <class name="testCases.Products"/>
         </classes>
     </test>
 

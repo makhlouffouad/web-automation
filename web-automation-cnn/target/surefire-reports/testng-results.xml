@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Cnn App running on fireFox Browser" duration-ms="46998" started-at="2016-08-21T03:42:35Z" finished-at="2016-08-21T03:43:22Z">
+  <suite name="Cnn App running on fireFox Browser" duration-ms="82240" started-at="2016-08-22T23:11:47Z" finished-at="2016-08-22T23:13:09Z">
     <groups>
     </groups>
-    <test name="Home Page" duration-ms="46998" started-at="2016-08-21T03:42:35Z" finished-at="2016-08-21T03:43:22Z">
-      <class name="testCases.SearchNewsFromDB">
-        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.SearchNewsFromDB@4e04a765]" name="setUp" is-config="true" duration-ms="16608" started-at="2016-08-20T23:42:35Z" finished-at="2016-08-20T23:42:52Z">
+    <test name="Home Page" duration-ms="82240" started-at="2016-08-22T23:11:47Z" finished-at="2016-08-22T23:13:09Z">
+      <class name="testCases.ActionItems">
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCases.ActionItems@7ca48474]" name="setUp" is-config="true" duration-ms="18894" started-at="2016-08-22T19:11:47Z" finished-at="2016-08-22T19:12:06Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[fireFox]]>
               </value>
             </param>
             <param index="5">
@@ -48,15 +48,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchNews()[pri:0, instance:testCases.SearchNewsFromDB@4e04a765]" name="searchNews" duration-ms="29160" started-at="2016-08-20T23:42:52Z" finished-at="2016-08-20T23:43:21Z">
+        <test-method status="PASS" signature="searchNews()[pri:0, instance:testCases.ActionItems@7ca48474]" name="searchNews" duration-ms="61833" started-at="2016-08-22T19:12:06Z" finished-at="2016-08-22T19:13:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchNews -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testCases.SearchNewsFromDB@4e04a765]" name="cleanUp" is-config="true" duration-ms="1210" started-at="2016-08-20T23:43:21Z" finished-at="2016-08-20T23:43:22Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:testCases.ActionItems@7ca48474]" name="cleanUp" is-config="true" duration-ms="1491" started-at="2016-08-22T19:13:08Z" finished-at="2016-08-22T19:13:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- testCases.SearchNewsFromDB -->
+      </class> <!-- testCases.ActionItems -->
     </test> <!-- Home Page -->
   </suite> <!-- Cnn App running on fireFox Browser -->
 </testng-results>

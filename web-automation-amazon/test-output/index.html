@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Amazon_App_running_on_Firefox_Browser">
-              <span class="suite-name border-failed">Amazon App running on Firefox Browser</span>
+              <span class="suite-name border-passed">Amazon App running on Firefox Browser</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Amazon_App_running_on_Firefox_Browser" class="hide-methods failed suite-Amazon_App_running_on_Firefox_Browser"> (hide)</a> <!-- hide-methods failed suite-Amazon_App_running_on_Firefox_Browser -->
-                      <a href="#" panel-name="suite-Amazon_App_running_on_Firefox_Browser" class="show-methods failed suite-Amazon_App_running_on_Firefox_Browser"> (show)</a> <!-- show-methods failed suite-Amazon_App_running_on_Firefox_Browser -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Amazon_App_running_on_Firefox_Browser" class="hide-methods passed suite-Amazon_App_running_on_Firefox_Browser"> (hide)</a> <!-- hide-methods passed suite-Amazon_App_running_on_Firefox_Browser -->
+                      <a href="#" panel-name="suite-Amazon_App_running_on_Firefox_Browser" class="show-methods passed suite-Amazon_App_running_on_Firefox_Browser"> (show)</a> <!-- show-methods passed suite-Amazon_App_running_on_Firefox_Browser -->
                     </span>
-                    <div class="method-list-content failed suite-Amazon_App_running_on_Firefox_Browser">
+                    <div class="method-list-content passed suite-Amazon_App_running_on_Firefox_Browser">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Amazon_App_running_on_Firefox_Browser" title="testCases.ItemSearch" hash-for-method="dropDownSearch">dropDownSearch</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Amazon_App_running_on_Firefox_Browser" title="testCases.Products" hash-for-method="searchItems">searchItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Amazon_App_running_on_Firefox_Browser -->
+                    </div> <!-- method-list-content passed suite-Amazon_App_running_on_Firefox_Browser -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,52 +117,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Amazon_App_running_on_Firefox_Browser" class="panel Amazon_App_running_on_Firefox_Browser">
-          <div class="suite-Amazon_App_running_on_Firefox_Browser-class-failed">
+          <div class="suite-Amazon_App_running_on_Firefox_Browser-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.ItemSearch</span>
+              <img src="passed.png"/>
+              <span class="class-name">testCases.Products</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="dropDownSearch">
-                  </a> <!-- dropDownSearch -->
-                  <span class="method-name">dropDownSearch</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Command duration or timeout: 201 milliseconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.244.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=46.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1f3873ad-e064-4e95-a40a-1fb97c10dd0b
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:179)
-	at base.CommonAPI.getListOfString(CommonAPI.java:159)
-	at testCases.ItemSearch.dropDownSearch(ItemSearch.java:22)
-Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;dell-PC&apos;, ip: &apos;192.168.244.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12719)
-	at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9558)
-	at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9705)
-	at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9652)
-	at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12517)
-	at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
-	at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
-	at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
-	at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
-	at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
-	at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/dell/AppData/Local/Temp/anonymous2926890709744201589webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
+                  <a name="searchItems">
+                  </a> <!-- searchItems -->
+                  <span class="method-name">searchItems</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Amazon_App_running_on_Firefox_Browser-class-failed -->
+          </div> <!-- suite-Amazon_App_running_on_Firefox_Browser-class-passed -->
         </div> <!-- panel Amazon_App_running_on_Firefox_Browser -->
         <div panel-name="test-xml-Amazon_App_running_on_Firefox_Browser" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -182,7 +151,7 @@ Driver info: driver.version: unknown
   &lt;parameter name=&quot;url&quot; value=&quot;http://www.amazon.com&quot;/&gt;
   &lt;test name=&quot;Home Page&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.ItemSearch&quot;/&gt;
+      &lt;class name=&quot;testCases.Products&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Home Page --&gt;
 &lt;/suite&gt; &lt;!-- Amazon App running on Firefox Browser --&gt;
@@ -224,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'dropDownSearch')
-data.setCell(0, 2, 'testCases.ItemSearch')
-data.setCell(0, 3, 670);
+data.setCell(0, 1, 'searchItems')
+data.setCell(0, 2, 'testCases.Products')
+data.setCell(0, 3, 42970);
 window.suiteTableData['Amazon_App_running_on_Firefox_Browser']= { tableData: data, tableDiv: 'times-div-Amazon_App_running_on_Firefox_Browser'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 670 ms</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Amazon_App_running_on_Firefox_Browser">
               </div> <!-- times-div-Amazon_App_running_on_Firefox_Browser -->
             </div> <!-- times-div -->
@@ -257,22 +226,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.ItemSearch</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.Products</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, kamalfouad, 9e393693-07be-4415-a1b3-738bae10e050, windows 10, fireFox, 46, http://www.amazon....)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">dropDownSearch</span>
-                <span class="method-start">10527 ms</span>
+                <span class="method-name">searchItems</span>
+                <span class="method-start">12635 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">11224 ms</span>
+                <span class="method-start">55610 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

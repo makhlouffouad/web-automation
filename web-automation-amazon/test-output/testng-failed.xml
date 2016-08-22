@@ -10,18 +10,7 @@
   <parameter name="url" value="http://www.amazon.com"/>
   <test name="Home Page">
     <classes>
-      <class name="testCases.ItemSearch"/>
+      <class name="testCases.Products"/>
     </classes>
   </test> <!-- Home Page -->
-  <test name="Home Page(failed)">
-    <classes>
-      <class name="testCases.ItemSearch">
-        <methods>
-          <include name="setUp"/>
-          <include name="dropDownSearch"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- testCases.ItemSearch -->
-    </classes>
-  </test> <!-- Home Page(failed) -->
 </suite> <!-- Failed suite [Amazon App running on Firefox Browser] -->

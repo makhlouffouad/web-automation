@@ -4,13 +4,25 @@
   <parameter name="os" value="windows 10"/>
   <parameter name="accessKey" value="9e393693-07be-4415-a1b3-738bae10e050"/>
   <parameter name="browserVersion" value="46"/>
-  <parameter name="browserName" value="fireFox"/>
+  <parameter name="readFromExcelFile" value="false"/>
+  <parameter name="browserName" value="chrome"/>
   <parameter name="useCloud" value="false"/>
   <parameter name="userName" value="kamalfouad"/>
   <parameter name="url" value="http://www.cnn.com"/>
   <test name="Home Page">
     <classes>
-      <class name="testCases.Search"/>
+      <class name="testCases.ActionItems"/>
     </classes>
   </test> <!-- Home Page -->
+  <test name="Home Page(failed)">
+    <classes>
+      <class name="testCases.ActionItems">
+        <methods>
+          <include name="searchNews"/>
+          <include name="setUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- testCases.ActionItems -->
+    </classes>
+  </test> <!-- Home Page(failed) -->
 </suite> <!-- Failed suite [Cnn App running on chrome Browser] -->

@@ -18,11 +18,19 @@ public class ItemSearch extends CommonAPI{
 		List<WebElement> list = new ArrayList<WebElement>();
 		list = getListOfElement("searchDropdownBox option");
 		//System.out.println(list.size());
-		
 		List<String> items = getListOfString(list);
-		
-		
 		WebElement element = driver.findElement(By.id("searchDropdownBox"));
+		for(int i=1; i<list.size(); i++){
+				selectOptionByVisibleText(element, list.get(i).getText());
+				System.out.println(list.get(i).getText());
+				takeKeysEnter("#twotabsearchtextbox");
+				Thread.sleep(1000);
+				element = driver.findElement(By.id("searchDropdownBox"));
+				list = getListOfElement("searchDropdownBox option");
+			}
+		}
+	
+	
 		//select.selectByVisibleText("Beauty & Personal Care");
 		/*for(int i=0; i<items.size(); i++){
 			
@@ -36,15 +44,4 @@ public class ItemSearch extends CommonAPI{
 			Thread.sleep(3000);
 		}
 */		
-		for(int i=1; i<list.size(); i++){
-				selectOptionByVisibleText(element, list.get(i).getText());
-				System.out.println(list.get(i).getText());
-				takeKeysEnter("#twotabsearchtextbox");
-				Thread.sleep(1000);
-				element = driver.findElement(By.id("searchDropdownBox"));
-				list = getListOfElement("searchDropdownBox option");
-			}
-		
-	}
-	
 }

@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -32,8 +34,10 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 public class CommonAPI {
+
 	
-public WebDriver driver = null;
+	public WebDriver driver = null;
+	public static Logger logger = Logger.getLogger(CommonAPI.class);
 	
 	@Parameters({"useCloud","userName","accessKey","os","browserName","browserVersion","url"})
 	@BeforeMethod
@@ -41,17 +45,21 @@ public WebDriver driver = null;
 						@Optional("kamalfouad") String userName, 
 						@Optional("") String accessKey,
 						@Optional("windows 10")String os, 
-						@Optional (" ") String browserName,
+						@Optional ("fireFox") String browserName,
 						@Optional ("46")String browserVersion,
-						@Optional (" ") String url) throws IOException{
+						@Optional ("http://www.cnn.com") String url) throws IOException{
 		
 		if(useCloud==true){
 			//run in cloud
 			getCloudDriver(userName, accessKey, os, browserName, browserVersion);
+			logger.setLevel(Level.INFO);
+			logger.info("Test is running on Sauce Lab");
 		}
 		else{
 			//run in local
 			getLocalDriver(browserName);
+			logger.info("Test is running on Local Machine");
+
 		}	
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(url);
